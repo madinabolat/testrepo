@@ -42,10 +42,16 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Madina/OneDrive/Documents/GitHub/testrepo/hello&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Sum">
+  <component name="RunManager" selected="Application.FarenheittoCelcius">
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    </configuration>
+    <configuration name="FarenheittoCelcius" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="FarenheittoCelcius" />
+      <module name="hello" />
+      <option name="PROGRAM_PARAMETERS" value="70" />
+      <method v="2" />
     </configuration>
     <configuration name="HelloWorld" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="HelloWorld" />
@@ -56,6 +62,12 @@
       <option name="MAIN_CLASS_NAME" value="Sum" />
       <module name="hello" />
       <option name="PROGRAM_PARAMETERS" value="5 2" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Swap" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Swap" />
+      <module name="hello" />
+      <option name="PROGRAM_PARAMETERS" value="Madina Bolat" />
       <method v="2" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
