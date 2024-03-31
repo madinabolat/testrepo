@@ -42,10 +42,16 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/Madina/OneDrive/Documents/GitHub/testrepo/hello&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.FarenheittoCelcius">
+  <component name="RunManager" selected="Application.Divide">
     <configuration name="&lt;template&gt;" type="TestNG" default="true" selected="false">
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+    </configuration>
+    <configuration name="Divide" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Divide" />
+      <module name="hello" />
+      <option name="PROGRAM_PARAMETERS" value="6 3" />
+      <method v="2" />
     </configuration>
     <configuration name="FarenheittoCelcius" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="FarenheittoCelcius" />
