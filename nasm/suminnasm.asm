@@ -2,9 +2,8 @@ NULL EQU 0
 STD_OUTPUT_HANDLE EQU -11
 
 extern _GetStdHandle@4
-extern _WriteFile@20
+extern _WriteConsole@20
 extern _ExitProcess@4
-extern _printf
 
 global Start
 
@@ -22,6 +21,6 @@ Start:
     mov [result], eax
     push dword [result]
     push output_msg
-    call _printf  
+    call _WriteConsole@20
     add esp, 8  ; Adjust the stack pointer after the call
     call _ExitProcess@4
