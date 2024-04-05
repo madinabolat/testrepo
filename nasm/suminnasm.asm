@@ -9,7 +9,7 @@ global Start
 
 section .data
     num1 dd 3
-    num2 dd 5
+    num2 dd 8
     result dd 0
     output_msg db "The sum is: %d", 0  
 
@@ -22,5 +22,5 @@ Start:
     push dword [result]
     push output_msg
     call _WriteConsole@20
-    add esp, 8  ; Adjust the stack pointer after the call
+    add esp, 8  
     call _ExitProcess@4
