@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int array[] = {10, 50, 30, 30, 50};
+    int array[] = {10, 50, 40, 30, 50};
     int len = 5;
     int x = 40;
     int position=-1;
