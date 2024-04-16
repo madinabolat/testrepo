@@ -1,6 +1,6 @@
 public class SumEvenArray {
     public static void main(String[] args) {
-        int[] myArray = {10, 25, 30, 40};
+        int[] myArray = {10, 25, 35, 40};
         int sum = 0;
         int i;
         for (i=0; i<myArray.length; i++)
