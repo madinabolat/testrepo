@@ -8,7 +8,7 @@ extern _ExitProcess@4
 global Start
 
 section .data
-    num1 dd 5
+    num1 dd 4
     num2 dd 8
     result dd 0
     output_msg db "The sum is: %d", 0  
