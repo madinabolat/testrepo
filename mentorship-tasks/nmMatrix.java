@@ -5,7 +5,7 @@ public class nmMatrix {
         double[] array = new double[n];
         for (int i = 0; i < m; i++) {
             for (int j = 0; j < n; j++) {
-                array[j] = 100 * Math.random();
+                array[j] = Math.random();
                 System.out.println(array[j]);
             }
         }
