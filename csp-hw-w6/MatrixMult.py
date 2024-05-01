@@ -1,6 +1,6 @@
 pip3 install memory-profiler
 
-a = [[1, 2],
+a = [[1, 5],
     [3, 4]]
 b = [[5, 6],
     [7, 8]]
