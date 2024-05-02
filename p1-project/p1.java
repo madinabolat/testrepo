@@ -26,6 +26,7 @@ public class p1 {
         BufferedReader inputText = new BufferedReader(inputData);
         // reads text from the character based inputData
 
+
         String inputAsString = inputText.readLine();
         // System.out.println(inputAsString.length());
 
