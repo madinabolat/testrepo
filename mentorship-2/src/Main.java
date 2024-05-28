@@ -35,20 +35,36 @@ public class Main {
         printBoard(gameBoard);
         //placeElementHere(gameBoard, "x", 0,1);
         //placeElementHere(gameBoard, "o", 0,2);
-        String position1 = takeUserInput();
-        int i1 = Integer.parseInt(String.valueOf(position1.charAt(0)))-1;
-        int j1 = Integer.parseInt(String.valueOf(position1.charAt(2)))-1;
-        placeElementHere(gameBoard,"x",i1,j1);
+        //String position1 = takeUserInput();
+        //int i1 = Integer.parseInt(String.valueOf(position1.charAt(0)))-1;
+        //int j1 = Integer.parseInt(String.valueOf(position1.charAt(2)))-1;
+        //placeElementHere(gameBoard,"x",i1,j1);
 
-        String position2 = takeUserInput();
-        int i2 = Integer.parseInt(String.valueOf(position2.charAt(0)))-1;
-        int j2 = Integer.parseInt(String.valueOf(position2.charAt(2)))-1;
-        placeElementHere(gameBoard,"o",i2,j2);
+        //String position2 = takeUserInput();
+        //int i2 = Integer.parseInt(String.valueOf(position2.charAt(0)))-1;
+        //int j2 = Integer.parseInt(String.valueOf(position2.charAt(2)))-1;
+        //placeElementHere(gameBoard,"o",i2,j2);
 
         //considerations: there is already element there, out of bounds, row / column number invalid
 
         // combine user input, place position
         //may be new class? class that puts position?
+        int n = 3; // board n x n
+        int maxStepsFirstUser = n * n / 2 + 1;
+        int maxStepsSecondUser = n * n - maxStepsFirstUser;
+        String[] positionsFirstUser = new String[maxStepsFirstUser];
+        String[] positionsSecondUser = new String[maxStepsSecondUser];
+
+        for (int i = 0; i < maxStepsFirstUser; i++){
+            positionsFirstUser[i] =
+        }
+
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < n; j++){
+                positionsFirstUser[]
+
+            }
+        }
 
 
 
