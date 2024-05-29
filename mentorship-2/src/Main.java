@@ -23,9 +23,9 @@ public class Main {
         array[i][j]=p;
         printBoard(array);
     }
-    public static String takeUserInput(){
+    public static String takeUserInput(int m){
         Scanner scannerInput = new Scanner(System.in);
-        System.out.println("enter cell position in the format of row-column (Ex.: 1-1 for a cell in row 1, column 1. Rows and columns start from 1");
+        System.out.println("player"+m+", enter cell position in the format of row-column (Ex.: 1-1 for a cell in row 1, column 1. Rows and columns start from 1");
         String userInput = scannerInput.nextLine();
         //scannerInput.close();
         return(userInput);
@@ -49,6 +49,9 @@ public class Main {
 
         // combine user input, place position
         //may be new class? class that puts position?
+        // add error - this position is already taken
+        // add error beyond board size
+
         int n = 3; // board n x n
         int maxStepsFirstUser = n * n / 2 + 1;
         int maxStepsSecondUser = n * n - maxStepsFirstUser;
@@ -56,17 +59,17 @@ public class Main {
         String[] positionsSecondUser = new String[maxStepsSecondUser];
 
         for (int i = 0; i < maxStepsFirstUser; i++){
-            positionsFirstUser[i] =
-        }
-
-        for (int i = 0; i < n; i++){
-            for (int j = 0; j < n; j++){
-                positionsFirstUser[]
-
+            positionsFirstUser[i] = takeUserInput(1);
+            int i1 = Integer.parseInt(String.valueOf(positionsFirstUser[i].charAt(0)))-1;
+            int j1 = Integer.parseInt(String.valueOf(positionsFirstUser[i].charAt(2)))-1;
+            placeElementHere(gameBoard,"x",i1,j1);
+            if (i == maxStepsFirstUser-1){
+                break;
             }
+            positionsSecondUser[i] = takeUserInput(2);
+            int i2 = Integer.parseInt(String.valueOf(positionsSecondUser[i].charAt(0)))-1;
+            int j2 = Integer.parseInt(String.valueOf(positionsSecondUser[i].charAt(2)))-1;
+            placeElementHere(gameBoard,"o",i2,j2);
         }
-
-
-
     }
 }
