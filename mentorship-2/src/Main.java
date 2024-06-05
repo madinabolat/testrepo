@@ -71,5 +71,27 @@ public class Main {
             int j2 = Integer.parseInt(String.valueOf(positionsSecondUser[i].charAt(2)))-1;
             placeElementHere(gameBoard,"o",i2,j2);
         }
+
+        //cases when one player wins
+        //suppose everything is filled for now
+
+        //first case if one row is the same
+        // not working correctly, keeps counting even if moves to the next row
+        
+        String placeholder = "x";
+        int counter = 0;
+        for (int i = 0; i < n; i++){
+            for (int j = 0; j < n; j++){
+                if (gameBoard[i][j] == placeholder) {
+                    counter += 1;
+                }// how to check if all elements in the array is equal counter?
+                System.out.println(counter);
+                System.out.println("element "+i+" , "+j+", "+gameBoard[i][j]);
+                if (counter == n){
+                    System.out.println("Player 1 won!");
+                    break;
+                }
+            }
+        }
     }
 }
