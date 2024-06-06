@@ -77,16 +77,16 @@ public class Main {
 
         //first case if one row is the same
         // not working correctly, keeps counting even if moves to the next row
+
+        //need a function to determine if Player 1 or Player 2 won
         
         String placeholder = "x";
-        int counter = 0;
         for (int i = 0; i < n; i++){
+            int counter = 0;
             for (int j = 0; j < n; j++){
                 if (gameBoard[i][j] == placeholder) {
                     counter += 1;
                 }// how to check if all elements in the array is equal counter?
-                System.out.println(counter);
-                System.out.println("element "+i+" , "+j+", "+gameBoard[i][j]);
                 if (counter == n){
                     System.out.println("Player 1 won!");
                     break;
