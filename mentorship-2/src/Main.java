@@ -86,7 +86,7 @@ public class Main {
             for (int j = 0; j < n; j++){
                 if (gameBoard[i][j] == placeholder) {
                     counter += 1;
-                }// how to check if all elements in the array is equal counter?
+                }
                 if (counter == n){
                     System.out.println("Player 1 won!");
                     break;
