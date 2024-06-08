@@ -78,8 +78,6 @@ public class Main {
         //first case if one row is the same
         // not working correctly, keeps counting even if moves to the next row
 
-        //need a function to determine if Player 1 or Player 2 won
-        
         String placeholder = "x";
         for (int i = 0; i < n; i++){
             int counter = 0;
