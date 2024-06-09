@@ -30,6 +30,21 @@ public class Main {
         //scannerInput.close();
         return(userInput);
     }
+    public static void checkIfWon(String playerSign, String[][] gameBoard, int n){
+        for (int i = 0; i < n; i++){
+            int counter = 0;
+            for (int j = 0; j < n; j++){
+                if (gameBoard[i][j] == playerSign) {
+                    counter += 1;
+                }
+                if (counter == n){
+                    System.out.println("Player '"+playerSign+"' won!");
+                    break;
+                }
+            }
+        }
+    }
+
     public static void main(String[] args) {
         String[][] gameBoard = createEmptyBoard(3);
         printBoard(gameBoard);
@@ -72,24 +87,6 @@ public class Main {
             placeElementHere(gameBoard,"o",i2,j2);
         }
 
-        //cases when one player wins
-        //suppose everything is filled for now
-
-        //first case if one row is the same
-        // not working correctly, keeps counting even if moves to the next row
-
-        String placeholder = "x";
-        for (int i = 0; i < n; i++){
-            int counter = 0;
-            for (int j = 0; j < n; j++){
-                if (gameBoard[i][j] == placeholder) {
-                    counter += 1;
-                }
-                if (counter == n){
-                    System.out.println("Player 1 won!");
-                    break;
-                }
-            }
-        }
+        checkIfWon("x", gameBoard, n);
     }
 }
