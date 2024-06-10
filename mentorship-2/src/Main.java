@@ -62,10 +62,7 @@ public class Main {
 
         //considerations: there is already element there, out of bounds, row / column number invalid
 
-        // combine user input, place position
-        //may be new class? class that puts position?
-        // add error - this position is already taken
-        // add error beyond board size
+
 
         int n = 3; // board n x n
         int maxStepsFirstUser = n * n / 2 + 1;
