@@ -26,8 +26,7 @@ public class Main {
     public static String takeUserInput(int m){
         Scanner scannerInput = new Scanner(System.in);
         System.out.println("player"+m+", enter cell position in the format of row-column (Ex.: 1-1 for a cell in row 1, column 1. Rows and columns start from 1");
-        String userInput = scannerInput.nextLine();
-        //scannerInput.close();
+        String userInput = scannerInput.nextLine();s
         return(userInput);
     }
     public static void checkIfWon(String playerSign, String[][] gameBoard, int n){
