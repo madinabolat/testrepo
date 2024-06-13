@@ -47,7 +47,7 @@ public class Main {
     public static void main(String[] args) {
         String[][] gameBoard = createEmptyBoard(3);
         printBoard(gameBoard);
-        int n = 3; // board n x n
+        int n = 3;
         int maxStepsFirstUser = n * n / 2 + 1;
         int maxStepsSecondUser = n * n - maxStepsFirstUser;
         String[] positionsFirstUser = new String[maxStepsFirstUser];
@@ -68,5 +68,8 @@ public class Main {
         }
 
         checkIfWon("x", gameBoard, n);
+
+        //next steps: check if won "o"
+        //errors 
     }
 }
