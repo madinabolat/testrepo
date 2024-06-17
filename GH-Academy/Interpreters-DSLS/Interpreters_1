@@ -17,6 +17,14 @@
 - if-else-end
 - Print (the only function call)
 
+Lecture: 
+Expression:
+Structure: <operator> <operand1> <operand2>
+Operator: Must be one of the defined operators: ADD, SUB, MUL, DIV
+Operands: Must be valid integers.
+
+BNF: 
+<operator> :==  
 
 Homework: 
 9.1
